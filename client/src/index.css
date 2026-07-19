@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+:root {
+  --bg: #fafaf9;
+  --bg-raised: #ffffff;
+  --ink: #1a1a1d;
+  --ink-soft: #6b6b70;
+  --border: #e5e4e1;
+  --accent: #3454d1;
+  --accent-soft: #eef1fc;
+
+  --status-applied: #8b8d98;
+  --status-interview: #c9861a;
+  --status-offer: #2e8b57;
+  --status-rejected: #b0463c;
+  --status-withdrawn: #6b6b70;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+[data-theme="dark"] {
+  --bg: #131316;
+  --bg-raised: #1b1b1f;
+  --ink: #e7e7e5;
+  --ink-soft: #9a9aa0;
+  --border: #2a2a2f;
+  --accent: #7b93ff;
+  --accent-soft: #1d2440;
+
+  --status-applied: #a5a7b0;
+  --status-interview: #e0a53a;
+  --status-offer: #4caf7d;
+  --status-rejected: #d17a6d;
+  --status-withdrawn: #8a8a90;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+input, button {
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
