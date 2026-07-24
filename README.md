@@ -2,6 +2,10 @@
 
 A full-stack web app for tracking job applications — company, role, status, and notes — built to replace a messy spreadsheet with something purpose-built.
 
+## Live Demo
+- App: https://job-tracker-zeta-sepia.vercel.app
+- API: https://job-tracker-ew1w.onrender.com
+
 ## Features
 
 - **Authentication** — secure registration and login with JWT access tokens and httpOnly refresh tokens, so sessions persist safely without storing tokens in localStorage
