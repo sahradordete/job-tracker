@@ -9,7 +9,7 @@ import applicationsRoutes from "./routes/applications.routes.js";
 const app = express();
 app.use(cors({
   origin: process.env.NODE_ENV === "production"
-    ? "https://YOUR-VERCEL-URL.vercel.app" // placeholder until you deploy the frontend
+    ? "https://job-tracker-zeta-sepia.vercel.app/login" 
     : "http://localhost:5173",
   credentials: true,
 }));
