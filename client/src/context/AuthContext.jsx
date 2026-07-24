@@ -39,10 +39,18 @@ export function AuthProvider({ children }) {
   }
 
   async function logout() {
+  console.log("logout called");
+  try {
     await api.post("/auth/logout");
+    console.log("logout request succeeded");
+  } catch (err) {
+    console.error("logout request failed:", err);
+  } finally {
     setAccessToken(null);
     setUser(null);
+    console.log("user state cleared");
   }
+}
 
   return (
     <AuthContext.Provider value={{ user, login, register, logout, ready }}>
