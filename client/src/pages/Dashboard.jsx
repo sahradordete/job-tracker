@@ -136,7 +136,7 @@ export default function Dashboard() {
               fontWeight: 600,
             }}
           >
-            + Nova
+            + New
           </button>
           <button
             onClick={logout}
